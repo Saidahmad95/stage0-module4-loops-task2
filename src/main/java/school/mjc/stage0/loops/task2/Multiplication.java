@@ -3,13 +3,12 @@ package school.mjc.stage0.loops.task2;
 public class Multiplication {
     public void printMultiplied(int multiplyByAndToInclusive) {
         if (multiplyByAndToInclusive == 0) {
-            System.out.println("");
+            System.out.print("");
             return;
         }
-        System.out.println(0);
-        int i = multiplyByAndToInclusive;
-        while (i < multiplyByAndToInclusive * multiplyByAndToInclusive) {
-            System.out.println(multiplyByAndToInclusive > 0 ? i : "-"+i);
+        int i = 0;
+        while (Math.abs(i) <= multiplyByAndToInclusive * multiplyByAndToInclusive) {
+            System.out.println(i);
             i += multiplyByAndToInclusive;
         }
     }
